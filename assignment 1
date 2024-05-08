@@ -1,0 +1,76 @@
+VOTE :
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cout << "Enter your age: ";
+    cin >> age;
+
+    if (age >= 18) {
+        cout << "You are eligible to vote.";
+    } else {
+        cout << "You are not eligible to vote.";
+    }
+
+    return 0;
+}
+
+
+SUM OF N NUMBERS
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the value of n: ";
+    cin >> n;
+
+    int sum = n * (n + 1) / 2;
+    cout << "The sum of the first " << n << " natural numbers is: " << sum << endl;
+
+    return 0;
+}
+
+
+PERFECT NUMBER
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, sum = 0;
+    cout << "Enter a positive integer: ";
+    cin >> num;
+
+    for (int i = 1; i < num; i++) {
+        if (num % i == 0) {
+            sum += i;
+        }
+    }
+
+    if (sum == num && sum != 0) {
+        cout << num << " is a perfect number." << endl;
+    } else {
+        cout << num << " is not a perfect number." << endl;
+    }
+
+    return 0;
+}
+
+DIVIDED BY 9
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a positive integer: ";
+    cin >> num;
+
+    if (num % 9 == 0) {
+        cout << num << " is divisible by 9." << endl;
+    } else {
+        cout << num << " is not divisible by 9." << endl;
+    }
+
+    return 0;
+}
